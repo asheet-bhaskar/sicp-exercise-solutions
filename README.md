@@ -1,2 +1,0 @@
-# sicp
-exercise solutions
