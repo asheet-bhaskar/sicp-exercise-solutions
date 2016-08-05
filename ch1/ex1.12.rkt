@@ -18,12 +18,12 @@
 
 (define (rth-eth  r e )
     (if (<= e (+ r 1))
-      (/ (fact r) (* (fact 2) (fact (- r e))))
+      (/ (fact r) (* (fact e) (fact (- r e))))
       0
     )
   )
 
 (define r 4)
-(define e 6)
+(define e 3)
 
 (rth-eth r e)
