@@ -29,15 +29,8 @@
    ) 1.0))
   
 
-(fixed-point (lambda (x)(+ 1 (/ 1 x))) )
+(fixed-point (lambda (x)(+ 1 (/ 1 (* x x)))) )
 
 (sqrt 16)
 
-(define (cube x)
-  ((iterative-improve
-   (lambda (g) (< (abs (- (* g  g) x))tolerance))
-   (lambda (g) (avg g (/ x g)))
-   ) 1.0)
-  )
-
-(cube 27)
+(fixed-point (lambda (x)(+ 1 (/ 1 x))) )
