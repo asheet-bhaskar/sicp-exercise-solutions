@@ -16,8 +16,6 @@
 
 
 
-;(scale-list (list 1 2 3 4 5 6 7 8 9 10) 2) 
+(scale-list (list 1 2 3 4 5 6 7 8 9 10) 2) 
 (scale-list-iter (list 1 2 3 4 5 6 7 8 9 10) 3) 
 
-
-;(map (lambda (x)(* x x)) (list 1 2 3 4 5 6 7 8 9 10)) 
