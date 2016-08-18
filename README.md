@@ -1,2 +1,1 @@
-# sicp
-##exercise solutions chapter1
+## SICP solutions
