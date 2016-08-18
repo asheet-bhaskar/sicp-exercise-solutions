@@ -1,5 +1,8 @@
 #lang scheme
 
+
+;; in (d) part constructor is changed  from list to cons, so only thing required is change in accessor methods
+
 (define (make-bm left right)(cons left right))   ; to make binary mobile
 
 (define (make-branch length structure)(cons length structure)) ; to make branch of binary mobile with input args as length and structure
