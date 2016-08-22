@@ -1,9 +1,10 @@
 #lang scheme
 
+(define (square a)(* a a))
 
 (define (eval a b)
   (if(and (number? a) (number? b))
-     (+ (* a a) (* 2 a b) (* b b))
+     (+ (square a) (* 2 a b) (square b))
      (display "Enter any two integers")))
 
-(eval "a" 3)
+(eval 4 5)
