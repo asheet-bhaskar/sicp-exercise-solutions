@@ -24,9 +24,9 @@
 (make-interval (- (lower-bound x) (upper-bound y))
 (- (upper-bound x) (lower-bound y))))
 
-(define (upper-bound int)(cdr int))
+(define (upper-bound int)(max (cdr int) (car int)))
 
-(define (lower-bound int)(car int))
+(define (lower-bound int)(min (cdr int) (car int)))
 
 (define (width int)(/ (- (upper-bound int) (lower-bound int)) 2))
 

@@ -26,9 +26,9 @@
 (define (make-interval a b) (cons a b))
 
 
-(define (upper-bound int)(cdr int))
+(define (upper-bound int)(max (cdr int) (car int)))
 
-(define (lower-bound int)(car int))
+(define (lower-bound int)(min (cdr int) (car int)))
 
 (define int (make-interval 1 9))
 (define int2 (make-interval 14 27))

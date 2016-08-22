@@ -1,7 +1,7 @@
 #lang scheme
-(define (upper-bound int)(cdr int))
+(define (upper-bound int)(max (cdr int) (car int)))
 ;;
-(define (lower-bound int)(car int))
+(define (lower-bound int)(min (cdr int) (car int)))
 ;;
 (define (make-center-width c w)
 (make-interval (- c w) (+ c w)))

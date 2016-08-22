@@ -58,7 +58,7 @@
 
 
 
-
+bm
 
 (length rb)
 (length lb)
@@ -85,7 +85,6 @@ rb
 (branch-structure lb)
 
 (total-weight bm)
-
 
 
 

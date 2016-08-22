@@ -29,9 +29,9 @@
   (/  (* 100 (width int)) (center int) )) 
   
 
-(define (upper-bound int)(cdr int))
+(define (upper-bound int)(max (cdr int) (car int)))
 
-(define (lower-bound int)(car int))
+(define (lower-bound int)(min (cdr int) (car int)))
 
 
 

@@ -12,6 +12,8 @@
      (+ 1 (list-length(cdr list))))
   )
 
+
+
 (define rev (list ))
 (define list1 (list 1 2 3 4 5 6 7 8))
 (list-reverse list1 rev )
