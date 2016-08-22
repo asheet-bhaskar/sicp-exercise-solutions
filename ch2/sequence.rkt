@@ -3,7 +3,7 @@
 (define (square x)(* x x))
 (define li (list 1 2 3 4 5 6))
 
-(map  square li)
+;(map  square li)
 
 (define (filter pred li)
     (cond
@@ -16,4 +16,11 @@
 
 (define (even? n)(= (remainder n 2)0 ))
 
+(define (accumulate op initial seq)
+  (if(null? seq)
+     initial
+     (op (car seq) (accumulate op initial (cdr seq))))
+  )
+
 (map square (filter even? li))
+
